@@ -1,0 +1,28 @@
+package com.deepak.precize.event;
+
+import java.time.Instant;
+
+public abstract class Event {
+    protected String eventId;
+    protected Instant timestamp;
+    protected String eventType;
+
+    public Event(String eventId, Instant timestamp, String eventType) {
+        this.eventId = eventId;
+        this.timestamp = timestamp;
+        this.eventType = eventType;
+    }
+
+    // Getters
+    public String getEventId() {
+        return eventId;
+    }
+
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+
+    public String getEventType() {
+        return eventType;
+    }
+}
